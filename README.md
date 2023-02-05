@@ -16,7 +16,8 @@ All the data are provided in ./MultiESC/data/{train, valid, test}.txt.
 
 ### Download the pretrained models(bert-base and bart-base)
 
-Model link:
+bert-base: https://huggingface.co/bert-base-uncased
+bart-base: https://huggingface.co/facebook/bart-base
 
 Download them and save in the folder ./MODEL
 
