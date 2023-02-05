@@ -20,11 +20,11 @@ Model link:
 
 Download them and save in the folder ./MODEL
 
-### Download word vectors (glove.6B.300d.model)
+### Download metric code
 
-Link: [word2vec.zip ](https://drive.google.com/file/d/14QJpDvwaufsiqDh2hPiaKDk7dOL3gTiK/view?usp=sharing)
+Link: 
 
-Download it and save in the folder ./MultiESC/metric/word2vec
+Download it and save in the folder ./MultiESC/metric
 
 ## Implementation Process
 
@@ -34,7 +34,7 @@ Download it and save in the folder ./MultiESC/metric/word2vec
 CUDA_VISIBLE_DEVICES=0,1 python generate_strategy_norm_train.py --data_type=3 --model_type=1  --output_dir=./final_output/bart_output  --learning_rate=2e-5  --num_train_epochs=15 --lr2=2e-5 --with_cause --with_strategy
 ```
 
-2. Data augmentation for training the feedback predictor. The augmented data will be save in ./final_data/{train， valid,test}_extend_beam8_*.pk.
+2. Data augmentation for training the feedback predictor. The augmented data will be save in ./final_data/{train， valid,test}_extend_beam*.pk.
 
 ```bash
 CUDA_VISIBLE_DEVICES=0,1 python generate_strategy_test.py --data_type=3 --model_type=1  --output_dir=./output --saved_dir=./final_output/bart_output  --learning_rate=2e-5  --num_train_epochs=15 --lr2=2e-5 --with_cause --with_strategy
