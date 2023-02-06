@@ -1,25 +1,6 @@
 # MultiESC: Improving Multi-turn Emotional Support Dialogue Generation with Lookahead Strategy Planning
 This repository contains the codes and data used in our EMNLP'2022 paper: [Improving Multi-turn Emotional Support Dialogue Generation with Lookahead Strategy Planning](https://arxiv.org/abs/2210.04242).
 
-If you use our codes or your research is related to our work, please kindly cite our paper:
-```bib
-@inproceedings{cheng-etal-2022-improving,
-    title = "Improving Multi-turn Emotional Support Dialogue Generation with Lookahead Strategy Planning",
-    author = "Cheng, Yi  and
-      Liu, Wenge  and
-      Li, Wenjie  and
-      Wang, Jiashuo  and
-      Zhao, Ruihui  and
-      Liu, Bang  and
-      Liang, Xiaodan  and
-      Zheng, Yefeng",
-    booktitle = "Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing",
-    year = "2022",
-    publisher = "Association for Computational Linguistics",
-    pages = "3014--3026",
-}
-```
-
 ## Data and Environment Setup
 ### Environment
 Refer to new_torch15.yml to set up the environment. You could use the following command.
@@ -74,4 +55,24 @@ CUDA_VISIBLE_DEVICES=0 python3 get_lookahead_strategy.py
 
 ```bash
 CUDA_VISIBLE_DEVICES=0,1 python generate_sentence.py  --data_type=8  --output_dir=./final_output/whlookahead_generate  --learning_rate=5e-5 --lr2=1e-4 --num_train_epochs=15  --with_cause --with_strategy --model_type=1 --lookahead
+```
+
+
+If you use our codes or your research is related to our work, please kindly cite our paper:
+```bib
+@inproceedings{cheng-etal-2022-improving,
+    title = "Improving Multi-turn Emotional Support Dialogue Generation with Lookahead Strategy Planning",
+    author = "Cheng, Yi  and
+      Liu, Wenge  and
+      Li, Wenjie  and
+      Wang, Jiashuo  and
+      Zhao, Ruihui  and
+      Liu, Bang  and
+      Liang, Xiaodan  and
+      Zheng, Yefeng",
+    booktitle = "Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing",
+    year = "2022",
+    publisher = "Association for Computational Linguistics",
+    pages = "3014--3026",
+}
 ```
