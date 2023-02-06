@@ -58,6 +58,7 @@ CUDA_VISIBLE_DEVICES=0,1 python generate_sentence.py  --data_type=8  --output_di
 ```
 
 
+## cite
 If you use our codes or your research is related to our work, please kindly cite our paper:
 ```bib
 @inproceedings{cheng-etal-2022-improving,
