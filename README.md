@@ -1,9 +1,27 @@
-# Steps
+# MultiESC: Improving Multi-turn Emotional Support Dialogue Generation with Lookahead Strategy Planning
+This repository contains the codes and data used in our EMNLP'2022 paper: [Improving Multi-turn Emotional Support Dialogue Generation with Lookahead Strategy Planning](https://arxiv.org/abs/2210.04242).
+
+If you use our codes or your research is related to our work, please kindly cite our paper:
+```bib
+@inproceedings{cheng-etal-2022-improving,
+    title = "Improving Multi-turn Emotional Support Dialogue Generation with Lookahead Strategy Planning",
+    author = "Cheng, Yi  and
+      Liu, Wenge  and
+      Li, Wenjie  and
+      Wang, Jiashuo  and
+      Zhao, Ruihui  and
+      Liu, Bang  and
+      Liang, Xiaodan  and
+      Zheng, Yefeng",
+    booktitle = "Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing",
+    year = "2022",
+    publisher = "Association for Computational Linguistics",
+    pages = "3014--3026",
+}
+```
 
 ## Data and Environment Setup
-
 ### Environment
-
 Refer to new_torch15.yml to set up the environment. You could use the following command.
 
 ```bash
@@ -11,18 +29,15 @@ conda env create -f new_torch15.yml
 ```
 
 ### Data
+All the data are provided in ./MultiESC/data/{train, valid, test}.txt. 
 
-All the data are provided in ./MultiESC/data/{train, valid, test}.txt.
+### Download the pretrained models
 
-### Download the pretrained models(bert-base and bart-base)
+bert-base:  [https://huggingface.co/bert-base-uncased](https://huggingface.co/bert-base-uncased)
 
-bert-base: https://huggingface.co/bert-base-uncased
-
-
-bart-base: https://huggingface.co/facebook/bart-base
+bart-base:  [https://huggingface.co/facebook/bart-base](https://huggingface.co/facebook/bart-base)
 
 Download them and save in the folder ./MODEL
-
 ### Download metric code
 
 Link:  https://drive.google.com/file/d/1AFE2B7dYw9mU4rLEN4k7BMrtOxIlhXYh/view?usp=sharing
