@@ -51,7 +51,7 @@ CUDA_VISIBLE_DEVICES=0,2 python feedback_model_train.py
 CUDA_VISIBLE_DEVICES=0 python3 get_lookahead_strategy.py
 ```
 
-5. Generate the responses, using the predicted strategies. The output will be saved in ./final_output/whlookahead_generate.
+5. Generate the responses, using the predicted strategies. The model will be saved in ./final_output/whlookahead_generate.
 
 ```bash
 CUDA_VISIBLE_DEVICES=0,1 python generate_sentence.py  --data_type=8  --output_dir=./final_output/whlookahead_generate  --learning_rate=5e-5 --lr2=1e-4 --num_train_epochs=15  --with_cause --with_strategy --model_type=1 --lookahead
